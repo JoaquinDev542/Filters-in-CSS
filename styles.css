@@ -1,0 +1,136 @@
+* , ::before , ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.gallery-img{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr );
+    grid-template-areas: 
+    "gallery-img__img--1"
+    "gallery-img__img--2"
+    "gallery-img__img--3"
+    "gallery-img__img--4"
+    "gallery-img__img--5"
+    "gallery-img__img--6"
+    "gallery-img__img--7"
+    "gallery-img__img--8"
+    "gallery-img__img--9"
+    "gallery-img__img--10";
+    row-gap: 30px;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.gallery-img__img {
+    cursor: pointer;
+    transition: .5s ease ;
+}
+
+.gallery-img__img--1 {
+    grid-area: gallery-img__img--1;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--1:hover {
+    filter: blur(5px);
+}
+
+.gallery-img__img--2 {
+    grid-area: gallery-img__img--2;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--2:hover {
+    filter: brightness(.5)
+}
+
+.gallery-img__img--3 {
+    grid-area: gallery-img__img--3;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--3:hover {
+    filter: contrast(50%);
+}
+
+.gallery-img__img--4 {
+    grid-area: gallery-img__img--4;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--4:hover {
+    filter: grayscale(100%);
+}
+
+.gallery-img__img--5 {
+    grid-area: gallery-img__img--5;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--5:hover {
+    filter: hue-rotate(50deg);;
+}
+
+.gallery-img__img--6 {
+    grid-area: gallery-img__img--6;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--6:hover {
+    filter: invert(100%);
+}
+
+.gallery-img__img--7 {
+    grid-area: gallery-img__img--7;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--7:hover {
+    filter: opacity(.5);
+}
+
+.gallery-img__img--8 {
+    grid-area: gallery-img__img--8;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--8:hover {
+    filter: saturate(50%);
+}
+
+.gallery-img__img--9 {
+    grid-area: gallery-img__img--9;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--9:hover {
+    filter: sepia(100%);
+}
+
+.gallery-img__img--10 {
+    grid-area: gallery-img__img--10;
+}
+
+/* CODIGO HOVER DE FILTER */
+.gallery-img__img--10:hover {
+    filter: drop-shadow(10px 10px 20px red);
+}
+
+.gallery-img__container {
+    text-align: center;
+}
