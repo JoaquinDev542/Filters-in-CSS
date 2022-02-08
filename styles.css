@@ -130,7 +130,7 @@ img {
 .gallery-img__img--10:hover {
     filter: drop-shadow(10px 10px 20px red);
 }
-
+ 
 .gallery-img__container {
     text-align: center;
 }
